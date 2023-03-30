@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/ce72c49d54.js" crossorigin="anonymous"></script>
+
+    <title>Instagram - Bootstrap</title>
+</head>
+<body>
+    <!-- Este es el Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid bg-light d-flex">
+            
+            <a class="navbar-brand" href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success ms-auto p-2   " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create a new post
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create a New Post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <h6>Caption</h6>
+                    <input class="input1" placeholder="Add the caption of your post here"/> 
+                    <br/>
+                    <buttom type="submit"><i class="fas fa-camera"></i></buttom>
+                    <buttom type="submit"><i class="fas fa-map-marker-alt"></i></buttom>         
+
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                    </div>
+                </div>
+                </div>
+            </div>        
+
+            <!-- Dropdown   -->
+            <div> 
+                <ul class="navbar-nav d-flex ">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle bg-secondary rounded p-2  " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-cog"></i>
+                        </a> 
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                        </ul> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- Contenido  -->
+    <nav>
+        <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fas fa-th"></i></button>
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fas fa-square"></i></button>
+        </div>
+    </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"> 
+                <!-- en grid -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-4" > 
+                            <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/flamingos-celestun-mexico.jpg?w=1900&h=1267" class="imggrid" alt="Flamingos"/>
+                        </div>
+                        <div class="col-4" > 
+                            <img src="https://astelus.com/wp-content/viajes/paisajes-con-animales-caballo.jpg" class="imggrid" alt="Caballo Blanco"/>
+                        </div>
+                        <div class="col-4" > 
+                            <img src="https://astelus.com/wp-content/viajes/paisajes-con-animales-leon.jpg" class="imggrid" alt="Leon"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4" > 
+                            <img src="https://okdiario.com/img/2019/11/17/los-5-animales-salvajes-mas-agresivos-con-el-ser-humano-1-655x368.jpg" class="imggrid" alt="Cocodrilo"/>
+                        </div>
+                        <div class="col-4" > 
+                            <img src="https://concepto.de/wp-content/uploads/2019/05/tiburon-2-e1556762192703.jpg" class="imggrid" alt="Tiburón"/>
+                        </div>
+                        <div class="col-4" > 
+                            <img src="https://www.anipedia.net/imagenes/animal-salvaje-el-gorila.jpg" class="imggrid" alt="Gorila"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4" > 
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/02_I_Exposici%C3%B3n_Monogr%C3%A1fica_Club_Rottweiler_de_Espa%C3%B1a_-_Santa_Brigida_-_Gran_Canaria.jpg/600px-02_I_Exposici%C3%B3n_Monogr%C3%A1fica_Club_Rottweiler_de_Espa%C3%B1a_-_Santa_Brigida_-_Gran_Canaria.jpg " class="imggrid" alt="Perro de raza Rottweiler"/>
+                        </div>
+                        <div class="col-4" > 
+                            <img src="https://okdiario.com/img/2020/02/09/jeff-griffith-zqypm8i60f8-unsplash1-655x368.jpg" class="imggrid" alt="Zebra"/>
+                        </div>
+                        <div class="col-4" > 
+                            <img src="https://perthzoo.wa.gov.au/getattachment/DATA/Articles/Animal-Couple-Goals/600px-300px-otter-love.jpg.aspx" class="imggrid" alt="Nutria"/>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <!-- en post -->    
+                <div class="container">
+                    <div class="row">
+                        <div class="card"  style="width: 26rem;">
+                            
+                                <h5>Flamencos Rosados</h5>
+                                <p class="fecha">20/03</p>
+                            
+                                <img class="img" src="https://static.nationalgeographic.es/files/styles/image_3200/public/flamingos-celestun-mexico.jpg?w=1900&h=1267" class="card-img-top" alt="Flamencos">
+                                <h6>500 likes</h6>
+                                <p>Todas las especies son de color rosa más o menos fuerte, desde el rosa claro casi blanco del flamenco europeo (Phoenicopterus roseus), hasta el color salmón del flamenco del Caribe (Phoenicopterus ruber).</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card"  style="width: 26rem;">
+                            
+                                <h5>Caballo Blanco</h5>
+                                <p class="fecha">10/03</p>
+                            
+                                <img class="img" src="https://astelus.com/wp-content/viajes/paisajes-con-animales-caballo.jpg" class="card-img-top" alt="Caballo Blanco">
+                                <h6>750 likes</h6>
+                                <p>Los caballos blancos poseen piel no pigmentada y un pelaje blanco. Muchos caballos blancos poseen ojos oscuros, aunque algunos tienen ojos azules.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card"  style="width: 26rem;">
+                            
+                                <h5 >Melena de León</h5>
+                                <p class="fecha">01/03</p>
+                            
+                                <img class="img" src="https://astelus.com/wp-content/viajes/paisajes-con-animales-leon.jpg" class="card-img-top" alt="León Macho">
+                                <h6>620 likes</h6>
+                                <p>El león (de nombre científico Panthera leo) es un felino carnívoro de gran tamaño. Es originario del África Subsahariana y de ciertas regiones de la India, en donde constituye el mayor depredador de la cadena trófica.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+
+</body>
+</html>
